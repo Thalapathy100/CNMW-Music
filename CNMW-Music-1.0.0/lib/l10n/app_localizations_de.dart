@@ -1,0 +1,2482 @@
+// ignore: unused_import
+import 'package:intl/intl.dart' as intl;
+import 'app_localizations.dart';
+
+// ignore_for_file: type=lint
+
+/// The translations for German (`de`).
+class AppLocalizationsDe extends AppLocalizations {
+  AppLocalizationsDe([String locale = 'de']) : super(locale);
+
+  @override
+  String get onboardingTitle => 'Willkommen bei CNMW Music';
+
+  @override
+  String get onboardingSubtitle => 'Richten wir deine Sprache und Region ein.';
+
+  @override
+  String get continueButton => 'Weiter';
+
+  @override
+  String get navHome => 'Start';
+
+  @override
+  String get navLibrary => 'Mediathek';
+
+  @override
+  String get navSearch => 'Suche';
+
+  @override
+  String get navLocal => 'Lokal';
+
+  @override
+  String get navOffline => 'Offline';
+
+  @override
+  String get playerEnjoyingFrom => 'Wird abgespielt von';
+
+  @override
+  String get playerPlayWithMix => 'Auto-Mix Wiedergabe';
+
+  @override
+  String get playerPlayNext => 'Als Nächstes spielen';
+
+  @override
+  String get playerAddToQueue => 'In Warteschlange';
+
+  @override
+  String get playerAddToFavorites => 'Zu Favoriten hinzufügen';
+
+  @override
+  String get playerNoLyricsFound => 'Kein Songtext gefunden';
+
+  @override
+  String get playerLyricsNoPlugin =>
+      'Kein Songtext-Anbieter konfiguriert. Gehe zu Einstellungen → Plugins, um einen zu installieren.';
+
+  @override
+  String get localMusicTitle => 'Lokal';
+
+  @override
+  String get localMusicGrantPermission => 'Berechtigung erteilen';
+
+  @override
+  String get localMusicStorageAccessRequired => 'Speicherzugriff erforderlich';
+
+  @override
+  String get localMusicStorageAccessDesc =>
+      'Bitte erlaube den Zugriff, um auf deinem Gerät gespeicherte Audiodateien zu finden und abzuspielen.';
+
+  @override
+  String get localMusicAddFolder => 'Musikordner hinzufügen';
+
+  @override
+  String get localMusicScanNow => 'Jetzt scannen';
+
+  @override
+  String localMusicScanFailed(String message) {
+    return 'Scan fehlgeschlagen: $message';
+  }
+
+  @override
+  String get localMusicScanning => 'Gerät wird nach Audiodateien durchsucht...';
+
+  @override
+  String get localMusicShuffle => 'Shuffle';
+
+  @override
+  String get localMusicPlayAll => 'Alle abspielen';
+
+  @override
+  String get localMusicSearchHint => 'Lokale Musik suchen...';
+
+  @override
+  String get localMusicRescanDevice => 'Gerät neu scannen';
+
+  @override
+  String get buttonCancel => 'Abbrechen';
+
+  @override
+  String get buttonDelete => 'Löschen';
+
+  @override
+  String get buttonOk => 'OK';
+
+  @override
+  String get buttonUpdate => 'Update';
+
+  @override
+  String get buttonDownload => 'Download';
+
+  @override
+  String get buttonLater => 'Später';
+
+  @override
+  String get buttonInfo => 'Info';
+
+  @override
+  String get buttonMore => 'Mehr';
+
+  @override
+  String get dialogDeleteTrack => 'Titel löschen';
+
+  @override
+  String dialogDeleteTrackMessage(String title) {
+    return 'Bist du sicher, dass du „$title“ von deinem Gerät löschen möchtest? Dieser Vorgang kann nicht rückgängig gemacht werden.';
+  }
+
+  @override
+  String get dialogDeleteTrackLinkedPlaylists =>
+      'Dieser Titel wird auch entfernt aus:';
+
+  @override
+  String get dialogDontAskAgain => 'Nicht erneut fragen';
+
+  @override
+  String get dialogUpdateAvailable => 'Update verfügbar';
+
+  @override
+  String get dialogUpdateNow => 'Jetzt aktualisieren';
+
+  @override
+  String get dialogDownloadPlaylist => 'Playlist herunterladen';
+
+  @override
+  String dialogDownloadPlaylistMessage(int count, String title) {
+    return 'Möchtest du $count Songs aus „$title“ herunterladen? Sie werden zur Download-Warteschlange hinzugefügt.';
+  }
+
+  @override
+  String get dialogDownloadAll => 'Alle herunterladen';
+
+  @override
+  String get playlistEdit => 'Playlist bearbeiten';
+
+  @override
+  String get playlistShareFile => 'Datei teilen';
+
+  @override
+  String get playlistExportFile => 'Datei exportieren';
+
+  @override
+  String get playlistPlay => 'Abspielen';
+
+  @override
+  String get playlistAddToQueue => 'Playlist zur Warteschlange hinzufügen';
+
+  @override
+  String get playlistShare => 'Playlist teilen';
+
+  @override
+  String get playlistDelete => 'Playlist löschen';
+
+  @override
+  String get playlistEmptyState => 'Noch keine Songs vorhanden!';
+
+  @override
+  String get playlistAvailableOffline => 'Offline verfügbar';
+
+  @override
+  String get playlistShuffle => 'Zufallswiedergabe';
+
+  @override
+  String get playlistNoMatchSearch =>
+      'Keine Playlists entsprechen deiner Suche';
+
+  @override
+  String get playlistCreateNew => 'Neue Playlist erstellen 😍';
+
+  @override
+  String get playlistCreateFirstOne =>
+      'Noch keine Playlists. Erstelle eine, um loszulegen!';
+
+  @override
+  String get addToPlaylistNoSongSelected => 'Kein Song ausgewählt';
+
+  @override
+  String get createPlaylistDialogBarrierLabel =>
+      'Dialog zum Erstellen einer Playlist';
+
+  @override
+  String get createPlaylistDialogNameHint => 'Sommer-Vibes';
+
+  @override
+  String get createPlaylistDialogCreate => 'Erstellen';
+
+  @override
+  String playlistSongCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Songs',
+      one: '1 Song',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String playlistRemovedTrack(String title, String playlist) {
+    return '„$title“ aus $playlist entfernt';
+  }
+
+  @override
+  String get playlistFailedToLoad => 'Playlist konnte nicht geladen werden';
+
+  @override
+  String get settingsTitle => 'Einstellungen';
+
+  @override
+  String get settingsPlugins => 'Plugins';
+
+  @override
+  String get settingsPluginsSubtitle =>
+      'Plugins installieren, laden und verwalten.';
+
+  @override
+  String get settingsDownloads => 'Downloads';
+
+  @override
+  String get settingsDownloadsSubtitle => 'Speicherpfad, Qualität und mehr...';
+
+  @override
+  String get settingsLocalTracks => 'Lokale Titel';
+
+  @override
+  String get settingsLocalTracksSubtitle =>
+      'Ordner verwalten und Scan-Einstellungen.';
+
+  @override
+  String get settingsPlayer => 'Player-Einstellungen';
+
+  @override
+  String get settingsPlayerSubtitle => 'Streaming-Qualität, Auto-Play etc.';
+
+  @override
+  String get settingsPluginDefaults => 'Plugin-Standards';
+
+  @override
+  String get settingsPluginDefaultsSubtitle =>
+      'Entdeckungsquelle, Resolver-Priorität.';
+
+  @override
+  String get settingsUIElements => 'Benutzeroberfläche';
+
+  @override
+  String get settingsUIElementsSubtitle => 'Auto-Slide, UI-Anpassungen etc.';
+
+  @override
+  String get settingsLastFM => 'Last.FM Einstellungen';
+
+  @override
+  String get settingsLastFMSubtitle => 'API-Key und Scrobbling-Einstellungen.';
+
+  @override
+  String get settingsStorage => 'Speicher';
+
+  @override
+  String get settingsStorageSubtitle =>
+      'Backup, Cache, Verlauf, Wiederherstellung.';
+
+  @override
+  String get settingsLanguageCountry => 'Sprache & Region';
+
+  @override
+  String get settingsLanguageCountrySubtitle =>
+      'Wähle deine Sprache und dein Land.';
+
+  @override
+  String get settingsAbout => 'Über CNMW Music';
+
+  @override
+  String get settingsAboutSubtitle => 'Version, Entwickler und App-Info.';
+
+  @override
+  String get settingsScanning => 'Scanning';
+
+  @override
+  String get settingsMusicFolders => 'Musikordner';
+
+  @override
+  String get settingsQuality => 'Qualität';
+
+  @override
+  String get settingsHistory => 'Verlauf';
+
+  @override
+  String get settingsBackupRestore => 'Sicherung & Wiederherstellung';
+
+  @override
+  String get settingsAutomatic => 'Automatisch';
+
+  @override
+  String get settingsDangerZone => 'Gefahrenzone';
+
+  @override
+  String get settingsScrobbling => 'Scrobbling';
+
+  @override
+  String get settingsAuthentication => 'Authentifizierung';
+
+  @override
+  String get settingsHomeScreen => 'Startbildschirm';
+
+  @override
+  String get settingsChartVisibility => 'Charts-Sichtbarkeit';
+
+  @override
+  String get dialogAddingToDownloadQueue =>
+      'Wird zur Download-Warteschlange hinzugefügt';
+
+  @override
+  String get emptyNoInternet => 'Keine Internetverbindung!';
+
+  @override
+  String get emptyNoContentPlugin =>
+      'Kein Content-Plugin geladen. Installiere einen Content Resolver im Plugin-Manager.';
+
+  @override
+  String get emptyRefreshingSource =>
+      'Entdeckungsquelle wird aktualisiert... Die vorherige Quelle ist nicht mehr verfügbar.';
+
+  @override
+  String get emptyNoTracks => 'Keine Titel verfügbar';
+
+  @override
+  String get emptyNoResults => 'Keine Treffer gefunden';
+
+  @override
+  String snackbarDeletedTrack(String title) {
+    return '„$title“ gelöscht';
+  }
+
+  @override
+  String snackbarDeleteFailed(String title) {
+    return 'Löschen von „$title“ fehlgeschlagen';
+  }
+
+  @override
+  String get snackbarAddedToNextQueue =>
+      'Als Nächstes in Warteschlange hinzugefügt';
+
+  @override
+  String get snackbarAddedToQueue => 'Zur Warteschlange hinzugefügt';
+
+  @override
+  String snackbarAddedToLiked(String title) {
+    return '„$title“ wurde zu deinen Favoriten hinzugefügt!';
+  }
+
+  @override
+  String snackbarNowPlaying(String name) {
+    return 'Spielt gerade $name';
+  }
+
+  @override
+  String snackbarPlaylistAddedToQueue(String name) {
+    return '$name zur Warteschlange hinzugefügt';
+  }
+
+  @override
+  String get snackbarPlaylistUpdated => 'Playlist aktualisiert!';
+
+  @override
+  String get snackbarLinkCopied => 'Link kopiert';
+
+  @override
+  String get snackbarCouldNotOpenLink => 'Link konnte nicht geöffnet werden';
+
+  @override
+  String snackbarSongsAddedToQueue(int count) {
+    return '$count Songs zur Download-Warteschlange hinzugefügt';
+  }
+
+  @override
+  String get searchHintExplore => 'Was möchtest du hören?';
+
+  @override
+  String get searchHintLibrary => 'Mediathek durchsuchen...';
+
+  @override
+  String get searchHintPlaylists => 'Playlists durchsuchen...';
+
+  @override
+  String get searchStartTyping => 'Tippe, um zu suchen...';
+
+  @override
+  String get searchNoSuggestions => 'Keine Vorschläge gefunden!';
+
+  @override
+  String get searchNoResults =>
+      'Keine Ergebnisse gefunden!\nVersuche es mit einem anderen Begriff oder einer anderen Quelle.';
+
+  @override
+  String get searchFailed => 'Suche fehlgeschlagen!';
+
+  @override
+  String get searchDiscover => 'Entdecke neue Musik...';
+
+  @override
+  String get searchSources => 'QUELLEN';
+
+  @override
+  String get searchNoPlugins => 'Keine Plugins installiert';
+
+  @override
+  String get searchTracks => 'Titel';
+
+  @override
+  String get searchAlbums => 'Alben';
+
+  @override
+  String get searchArtists => 'Interpreten';
+
+  @override
+  String get searchPlaylists => 'Playlists';
+
+  @override
+  String get exploreDiscover => 'Entdecken';
+
+  @override
+  String get exploreRecently => 'Zuletzt gehört';
+
+  @override
+  String get exploreLastFmPicks => 'Last.Fm Empfehlungen';
+
+  @override
+  String get exploreFailedToLoad =>
+      'Startbildschirm konnte nicht geladen werden.';
+
+  @override
+  String get libraryTitle => 'Mediathek';
+
+  @override
+  String get libraryEmptyState =>
+      'Deine Mediathek wirkt etwas einsam. Füge ein paar Titel hinzu, um sie zum Leben zu erwecken!';
+
+  @override
+  String libraryIn(String playlistName) {
+    return 'in $playlistName';
+  }
+
+  @override
+  String get menuAddToPlaylist => 'Zu Playlist hinzufügen';
+
+  @override
+  String get menuSmartReplace => 'Intelligentes Ersetzen';
+
+  @override
+  String get menuShare => 'Teilen';
+
+  @override
+  String get menuAvailableOffline => 'Offline verfügbar';
+
+  @override
+  String get menuDownload => 'Download';
+
+  @override
+  String get menuOpenOriginalLink => 'Original-Link öffnen';
+
+  @override
+  String get menuDeleteTrack => 'Löschen';
+
+  @override
+  String get tooltipRemoveFromLibrary => 'Aus Mediathek entfernen';
+
+  @override
+  String get tooltipSaveToLibrary => 'In Mediathek speichern';
+
+  @override
+  String get tooltipOpenOriginalLink => 'Original-Link öffnen';
+
+  @override
+  String get tooltipAvailableOffline => 'Offline verfügbar';
+
+  @override
+  String get tooltipMoreOptions => 'Weitere Optionen';
+
+  @override
+  String get appuiTitle => 'UI & Dienste';
+
+  @override
+  String get appuiAutoSlideCharts => 'Charts automatisch wechseln';
+
+  @override
+  String get appuiAutoSlideChartsSubtitle =>
+      'Charts auf dem Startbildschirm automatisch durchwechseln.';
+
+  @override
+  String get appuiLastFmPicksSubtitle =>
+      'Vorschläge von Last.FM anzeigen. Login & Neustart erforderlich.';
+
+  @override
+  String get appuiNoChartsAvailable =>
+      'Keine Charts verfügbar. Installiere ein Chart-Plugin.';
+
+  @override
+  String get appuiLoginToLastFm => 'Bitte melde dich zuerst bei Last.FM an.';
+
+  @override
+  String get appuiShowInCarousel => 'Im Karussell auf Start anzeigen.';
+
+  @override
+  String get countrySettingTitle => 'Land & Sprache';
+
+  @override
+  String get countrySettingAutoDetect => 'Land automatisch erkennen';
+
+  @override
+  String get countrySettingAutoDetectSubtitle =>
+      'Erkennt dein Land automatisch beim Start der App.';
+
+  @override
+  String get countrySettingCountryLabel => 'Land';
+
+  @override
+  String get countrySettingLanguageLabel => 'Sprache';
+
+  @override
+  String get countrySettingSystemDefault => 'Systemstandard';
+
+  @override
+  String get downloadSettingTitle => 'Downloads';
+
+  @override
+  String get downloadSettingQuality => 'Download-Qualität';
+
+  @override
+  String get downloadSettingQualitySubtitle =>
+      'Standard-Audioqualität für heruntergeladene Titel.';
+
+  @override
+  String get downloadSettingFolder => 'Download-Ordner';
+
+  @override
+  String get downloadSettingResetFolder => 'Ordner zurücksetzen';
+
+  @override
+  String get downloadSettingResetFolderSubtitle =>
+      'Standard-Downloadpfad wiederherstellen.';
+
+  @override
+  String get lastfmTitle => 'Last.FM';
+
+  @override
+  String get lastfmScrobbleTracks => 'Titel scrobbeln';
+
+  @override
+  String get lastfmScrobbleTracksSubtitle =>
+      'Überträgt gehörte Titel in dein Last.FM-Profil.';
+
+  @override
+  String get lastfmAuthFirst => 'Zuerst Last.FM API authentifizieren.';
+
+  @override
+  String get lastfmAuthenticatedAs => 'Angemeldet als';
+
+  @override
+  String get lastfmAuthFailed => 'Authentifizierung fehlgeschlagen:';
+
+  @override
+  String get lastfmNotAuthenticated => 'Nicht authentifiziert';
+
+  @override
+  String get lastfmSteps =>
+      'Schritte zur Anmeldung:\n1. Last.FM-Konto erstellen/öffnen\n2. API-Key generieren unter last.fm/api/account/create\n3. API-Key & Secret unten eingeben\n4. Auf „Authentifizierung starten“ tippen und im Browser bestätigen\n5. Auf „Session-Key speichern“ tippen';
+
+  @override
+  String get lastfmApiKey => 'API-Key';
+
+  @override
+  String get lastfmApiSecret => 'API-Secret';
+
+  @override
+  String get lastfmStartAuth => '1. Authentifizierung starten';
+
+  @override
+  String get lastfmGetSession => '2. Session-Key speichern';
+
+  @override
+  String get lastfmRemoveKeys => 'Keys entfernen';
+
+  @override
+  String get lastfmStartAuthFirst =>
+      'Starte zuerst die Authentifizierung und bestätige im Browser.';
+
+  @override
+  String get localSettingTitle => 'Lokale Titel';
+
+  @override
+  String get localSettingAutoScan => 'Beim Start scannen';
+
+  @override
+  String get localSettingAutoScanSubtitle =>
+      'Sucht beim App-Start automatisch nach neuen lokalen Titeln.';
+
+  @override
+  String get localSettingLastScan => 'Letzter Scan';
+
+  @override
+  String get localSettingNeverScanned => 'Nie';
+
+  @override
+  String get localSettingScanInProgress => 'Scan läuft...';
+
+  @override
+  String get localSettingScanNowSubtitle =>
+      'Manuellen vollständigen Mediathek-Scan starten.';
+
+  @override
+  String get localSettingNoFolders =>
+      'Keine Ordner hinzugefügt. Füge einen Ordner hinzu, um zu scannen.';
+
+  @override
+  String get localSettingAddFolder => 'Ordner hinzufügen';
+
+  @override
+  String get playerSettingTitle => 'Player-Einstellungen';
+
+  @override
+  String get playerSettingStreamingHeader => 'Streaming';
+
+  @override
+  String get playerSettingStreamQuality => 'Streaming-Qualität';
+
+  @override
+  String get playerSettingStreamQualitySubtitle =>
+      'Globale Audio-Bitrate für Online-Wiedergabe.';
+
+  @override
+  String get playerSettingQualityLow => 'Niedrig';
+
+  @override
+  String get playerSettingQualityMedium => 'Mittel';
+
+  @override
+  String get playerSettingQualityHigh => 'Hoch';
+
+  @override
+  String get playerSettingPlaybackHeader => 'Wiedergabe';
+
+  @override
+  String get playerSettingAutoPlay => 'Auto-Play';
+
+  @override
+  String get playerSettingAutoPlaySubtitle =>
+      'Ähnliche Songs hinzufügen, wenn die Warteschlange endet.';
+
+  @override
+  String get playerSettingAutoFallback => 'Automatisches Fallback';
+
+  @override
+  String get playerSettingAutoFallbackSubtitle =>
+      'Wenn ein Plugin fehlschlägt, wird automatisch ein kompatibler Resolver versucht.';
+
+  @override
+  String get playerSettingCrossfade => 'Überblenden';
+
+  @override
+  String get playerSettingCrossfadeOff => 'Aus';
+
+  @override
+  String get playerSettingCrossfadeInstant => 'Titel sofort wechseln';
+
+  @override
+  String playerSettingCrossfadeBlend(int seconds) {
+    return '${seconds}s Überblendung zwischen Titeln';
+  }
+
+  @override
+  String get playerSettingEqualizer => 'Equalizer';
+
+  @override
+  String get playerSettingEqualizerActive => 'Aktiv';
+
+  @override
+  String playerSettingEqualizerActivePreset(String preset) {
+    return 'Aktiviert — $preset Profil';
+  }
+
+  @override
+  String get playerSettingEqualizerSubtitle =>
+      'Parametrischer 10-Band-EQ (via FFmpeg).';
+
+  @override
+  String get pluginDefaultsTitle => 'Plugin-Standards';
+
+  @override
+  String get pluginDefaultsDiscoverHeader => 'Entdeckungsquelle';
+
+  @override
+  String get pluginDefaultsNoResolver =>
+      'Kein Content Resolver geladen. Installiere ein Plugin, um eine Quelle zu wählen.';
+
+  @override
+  String get pluginDefaultsAutomaticSubtitle =>
+      'Ersten verfügbaren Content Resolver verwenden.';
+
+  @override
+  String get pluginDefaultsPriorityHeader => 'Resolver-Priorität';
+
+  @override
+  String get pluginDefaultsNoPriority =>
+      'Keine Resolver geladen. Die Priorisierung erscheint hier nach der Installation.';
+
+  @override
+  String get pluginDefaultsPriorityDesc =>
+      'Ziehen zum Sortieren. Höher priorisierte Plugins werden zuerst zur Wiedergabe versucht.';
+
+  @override
+  String get pluginDefaultsLyricsHeader => 'Songtext-Priorität';
+
+  @override
+  String get pluginDefaultsLyricsNone => 'Keine Songtext-Anbieter geladen.';
+
+  @override
+  String get pluginDefaultsLyricsDesc =>
+      'Ziehen zum Sortieren. Der oberste Anbieter wird zuerst versucht.';
+
+  @override
+  String get pluginDefaultsSuggestionsHeader => 'Suchvorschläge';
+
+  @override
+  String get pluginDefaultsSuggestionsNone =>
+      'Keine Vorschlags-Anbieter geladen.';
+
+  @override
+  String get pluginDefaultsSuggestionsHistoryOnlyTitle => 'Keine';
+
+  @override
+  String get pluginDefaultsSuggestionsHistoryOnlySubtitle =>
+      'Nur Suchverlauf verwenden.';
+
+  @override
+  String get storageSettingTitle => 'Speicher';
+
+  @override
+  String get storageClearHistoryEvery => 'Verlauf löschen alle';
+
+  @override
+  String get storageClearHistorySubtitle =>
+      'Löscht den Hörverlauf nach dem gewählten Zeitraum.';
+
+  @override
+  String storageDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Tage',
+      one: '1 Tag',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String storageBackupCreatedAt(String path) {
+    return 'Sicherung erstellt unter $path';
+  }
+
+  @override
+  String storageBackupShareFailed(String error) {
+    return 'Freigabe der Sicherung fehlgeschlagen: $error';
+  }
+
+  @override
+  String get storageRestoreBackup => 'Sicherung wiederherstellen';
+
+  @override
+  String get storageRestoreBackupSubtitle =>
+      'Wiederherstellen von Einstellungen und Daten aus einer Datei.';
+
+  @override
+  String get storageAutoBackup => 'Auto-Backup';
+
+  @override
+  String get storageAutoLyrics => 'Songtexte automatisch speichern';
+
+  @override
+  String get storageAutoLyricsSubtitle =>
+      'Speichert Songtexte automatisch beim Abspielen eines Titels.';
+
+  @override
+  String get storageResetApp => 'CNMW Music App zurücksetzen';
+
+  @override
+  String get storageResetConfirmTitle => 'Zurücksetzen bestätigen';
+
+  @override
+  String get storageResetButton => 'Zurücksetzen';
+
+  @override
+  String get storageRestoreOptionsTitle => 'Wiederherstellungsoptionen';
+
+  @override
+  String get storageRestoreContinue => 'Weiter';
+
+  @override
+  String get storageRestoreConfirmTitle => 'Wiederherstellung bestätigen';
+
+  @override
+  String get storageRestoreYes => 'Ja, wiederherstellen';
+
+  @override
+  String get storageRestoring => 'Wiederherstellung läuft...\nBitte warten.';
+
+  @override
+  String get storageRestoreFailedTitle => 'Wiederherstellung fehlgeschlagen';
+
+  @override
+  String get updateSettingTitle => 'Updates';
+
+  @override
+  String get updateCheckForUpdates => 'Nach Updates suchen';
+
+  @override
+  String get updateCheckSubtitle =>
+      'Prüfen, ob eine neuere Version von CNMW Music verfügbar ist.';
+
+  @override
+  String get updateAutoNotify => 'Update-Benachrichtigung';
+
+  @override
+  String get updateAutoNotifySubtitle =>
+      'Benachrichtigen, wenn beim App-Start Updates verfügbar sind.';
+
+  @override
+  String get updateCheckTitle => 'Update-Suche';
+
+  @override
+  String get updateUpToDate => 'CNMW Music ist auf dem neuesten Stand!!!';
+
+  @override
+  String get updateViewPreRelease => 'Neueste Pre-Release ansehen';
+
+  @override
+  String updateCurrentVersion(String curr, String build) {
+    return 'Aktuelle Version: $curr + $build';
+  }
+
+  @override
+  String get updateNewVersionAvailable =>
+      'Neue Version von CNMW Music verfügbar!';
+
+  @override
+  String updateVersion(String ver, String build) {
+    return 'Version: $ver+$build';
+  }
+
+  @override
+  String get updateDownloadNow => 'Jetzt herunterladen';
+
+  @override
+  String get updateChecking => 'Es wird nach neuen Versionen gesucht...';
+
+  @override
+  String get timerTitle => 'Sleep Timer';
+
+  @override
+  String get timerInterludeMessage => 'Die Musik wird gestoppt in…';
+
+  @override
+  String get timerHours => 'Stunden';
+
+  @override
+  String get timerMinutes => 'Minuten';
+
+  @override
+  String get timerSeconds => 'Sekunden';
+
+  @override
+  String get timerStop => 'Timer stoppen';
+
+  @override
+  String get timerFinishedMessage => 'Musikwiedergabe beendet. Gute Nacht 🥰.';
+
+  @override
+  String get timerGotIt => 'Alles klar';
+
+  @override
+  String get timerSetTimeError => 'Bitte stelle eine Zeit ein';
+
+  @override
+  String get timerStart => 'Timer starten';
+
+  @override
+  String get notificationsTitle => 'Benachrichtigungen';
+
+  @override
+  String get recentsTitle => 'Verlauf';
+
+  @override
+  String playlistByCreator(String creator) {
+    return 'von $creator';
+  }
+
+  @override
+  String get playlistYou => 'Du';
+
+  @override
+  String get pluginManagerTitle => 'Plugins';
+
+  @override
+  String get pluginManagerEmpty =>
+      'Keine Plugins installiert.\nTippe auf +, um eine .bex Datei hinzuzufügen.';
+
+  @override
+  String get pluginManagerFilterAll => 'Alle';
+
+  @override
+  String get pluginManagerFilterContent => 'Content Resolver';
+
+  @override
+  String get pluginManagerFilterCharts => 'Chart-Anbieter';
+
+  @override
+  String get pluginManagerFilterLyrics => 'Songtext-Anbieter';
+
+  @override
+  String get pluginManagerFilterSuggestions => 'Vorschlags-Anbieter';
+
+  @override
+  String get pluginManagerFilterImporters => 'Importer';
+
+  @override
+  String get pluginManagerTooltipRefresh => 'Aktualisieren';
+
+  @override
+  String get pluginManagerTooltipInstall => 'Plugin installieren';
+
+  @override
+  String get pluginManagerNoMatch => 'Keine Plugins entsprechen diesem Filter';
+
+  @override
+  String pluginManagerPickFailed(String error) {
+    return 'Datei konnte nicht gewählt werden: $error';
+  }
+
+  @override
+  String get pluginManagerInstalling => 'Plugin wird installiert...';
+
+  @override
+  String get pluginManagerTypeContentResolver => 'Content Resolver';
+
+  @override
+  String get pluginManagerTypeChartProvider => 'Chart-Anbieter';
+
+  @override
+  String get pluginManagerTypeLyricsProvider => 'Songtext-Anbieter';
+
+  @override
+  String get pluginManagerTypeSuggestionProvider => 'Suchvorschläge';
+
+  @override
+  String get pluginManagerTypeContentImporter => 'Importer';
+
+  @override
+  String get pluginManagerDeleteTitle => 'Plugin löschen?';
+
+  @override
+  String pluginManagerDeleteMessage(String name) {
+    return 'Möchtest du „$name“ wirklich löschen? Dies entfernt alle zugehörigen Dateien.';
+  }
+
+  @override
+  String get pluginManagerDeleteAction => 'Löschen';
+
+  @override
+  String get pluginManagerCancel => 'Abbrechen';
+
+  @override
+  String get pluginManagerEnablePlugin => 'Plugin aktivieren';
+
+  @override
+  String get pluginManagerUnloadPlugin => 'Plugin deaktivieren';
+
+  @override
+  String get pluginManagerDeleting => 'Löscht...';
+
+  @override
+  String get pluginManagerApiKeysTitle => 'API-Keys';
+
+  @override
+  String get pluginManagerApiKeysSaved => 'API-Keys gespeichert';
+
+  @override
+  String get pluginManagerSave => 'Speichern';
+
+  @override
+  String get pluginManagerDetailVersion => 'Version';
+
+  @override
+  String get pluginManagerDetailType => 'Typ';
+
+  @override
+  String get pluginManagerDetailPublisher => 'Herausgeber';
+
+  @override
+  String get pluginManagerDetailLastUpdated => 'Zuletzt aktualisiert';
+
+  @override
+  String get pluginManagerDetailCreated => 'Erstellt am';
+
+  @override
+  String get pluginManagerDetailHomepage => 'Homepage';
+
+  @override
+  String get pluginManagerDeleteStorageTitle => 'Plugin-Daten löschen?';
+
+  @override
+  String pluginManagerDeleteStorageMessage(String name) {
+    return 'Sollen auch gespeicherte API-Keys und Einstellungen für „$name“ entfernt werden?';
+  }
+
+  @override
+  String get pluginManagerDeleteStorageKeep => 'Daten behalten';
+
+  @override
+  String get pluginManagerDeleteStorageRemove => 'Daten entfernen';
+
+  @override
+  String get segmentsSheetTitle => 'Segmente';
+
+  @override
+  String get segmentsSheetEmpty => 'Keine Segmente verfügbar';
+
+  @override
+  String get segmentsSheetUntitled => 'Unbenanntes Segment';
+
+  @override
+  String get smartReplaceTitle => 'Smart Replace';
+
+  @override
+  String smartReplaceSubtitle(String title) {
+    return 'Wähle einen spielbaren Ersatz für „$title“ und aktualisiere Verweise in deinen Playlists.';
+  }
+
+  @override
+  String get smartReplaceClose => 'Schließen';
+
+  @override
+  String get smartReplaceNoMatch => 'Kein Ersatz gefunden';
+
+  @override
+  String get smartReplaceNoMatchSubtitle =>
+      'Keines der Plugins lieferte einen ausreichend guten Treffer.';
+
+  @override
+  String get smartReplaceBestMatch => 'Bester Treffer';
+
+  @override
+  String get smartReplaceSearchFailed => 'Suche fehlgeschlagen';
+
+  @override
+  String smartReplaceApplyFailed(String error) {
+    return 'Smart Replace fehlgeschlagen: $error';
+  }
+
+  @override
+  String smartReplaceApplied(String queue) {
+    return 'Ersatz angewendet$queue.';
+  }
+
+  @override
+  String get smartReplaceQueueUpdated => ' und Warteschlange aktualisiert';
+
+  @override
+  String get playerUnknownQueue => 'Unbekannt';
+
+  @override
+  String playerLiked(String title) {
+    return '$title zu Favoriten hinzugefügt';
+  }
+
+  @override
+  String playerUnliked(String title) {
+    return '$title aus Favoriten entfernt';
+  }
+
+  @override
+  String get offlineNoDownloads => 'Keine Downloads';
+
+  @override
+  String get offlineTitle => 'Offline';
+
+  @override
+  String get offlineSearchHint => 'Deine Songs durchsuchen...';
+
+  @override
+  String get offlineRefreshTooltip => 'Downloads aktualisieren';
+
+  @override
+  String get offlineCloseSearch => 'Suche schließen';
+
+  @override
+  String get offlineSearchTooltip => 'Suche';
+
+  @override
+  String get offlineOpenFailed =>
+      'Dieser Offline-Titel konnte nicht geöffnet werden. Versuche, die Downloads zu aktualisieren.';
+
+  @override
+  String get offlinePlayFailed =>
+      'Song konnte nicht abgespielt werden. Bitte erneut versuchen.';
+
+  @override
+  String albumViewTrackCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Titel',
+      one: '1 Titel',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get albumViewLoadFailed => 'Album konnte nicht geladen werden';
+
+  @override
+  String get aboutCraftingSubtitle => 'Sinfonien aus Code erschaffen.';
+
+  @override
+  String get aboutFollowGitHub => 'Folge ihm auf GitHub';
+
+  @override
+  String get aboutSendInquiry => 'Geschäftliche Anfrage senden';
+
+  @override
+  String get aboutCreativeHighlights => 'Updates und kreative Highlights';
+
+  @override
+  String get aboutTipQuote =>
+      'Gefällt dir CNMW Music? Eine kleine Unterstützung lässt die App weiter blühen. 🌸';
+
+  @override
+  String get aboutTipButton => 'Ich möchte helfen';
+
+  @override
+  String get aboutTipDesc => 'Ich möchte, dass CNMW Music immer besser wird.';
+
+  @override
+  String get aboutGitHub => 'GitHub';
+
+  @override
+  String get songInfoSectionDetails => 'Song-Details';
+
+  @override
+  String get songInfoSectionTechnical => 'Technische Info';
+
+  @override
+  String get songInfoSectionActions => 'Aktionen';
+
+  @override
+  String get songInfoLabelTitle => 'Titel';
+
+  @override
+  String get songInfoLabelArtist => 'Interpret';
+
+  @override
+  String get songInfoLabelAlbum => 'Album';
+
+  @override
+  String get songInfoLabelDuration => 'Dauer';
+
+  @override
+  String get songInfoLabelSource => 'Quelle';
+
+  @override
+  String get songInfoLabelMediaId => 'Media-ID';
+
+  @override
+  String get songInfoLabelPluginId => 'Plugin-ID';
+
+  @override
+  String get songInfoCopyId => 'ID kopieren';
+
+  @override
+  String get songInfoCopyLink => 'Link kopieren';
+
+  @override
+  String get songInfoOpenBrowser => 'Im Browser öffnen';
+
+  @override
+  String get songInfoIdCopied => 'Media-ID kopiert';
+
+  @override
+  String get songInfoLinkCopied => 'Link kopiert';
+
+  @override
+  String get songInfoNoLink => 'Kein Link verfügbar';
+
+  @override
+  String get songInfoOpenFailed => 'Link konnte nicht geöffnet werden';
+
+  @override
+  String get songInfoUpdateMetadata => 'Metadaten aktualisieren';
+
+  @override
+  String get songInfoMetadataUpdated => 'Metadaten aktualisiert';
+
+  @override
+  String get songInfoMetadataUpdateFailed =>
+      'Fehler beim Aktualisieren der Metadaten';
+
+  @override
+  String get songInfoMetadataUnavailable =>
+      'Metadaten-Update für diese Quelle nicht verfügbar';
+
+  @override
+  String get songInfoSearchTitle => 'In CNMW Music nach diesem Song suchen';
+
+  @override
+  String get songInfoSearchArtist =>
+      'In CNMW Music nach diesem Interpreten suchen';
+
+  @override
+  String get songInfoSearchAlbum => 'In CNMW Music nach diesem Album suchen';
+
+  @override
+  String get eqTitle => 'Equalizer';
+
+  @override
+  String get chartNoItems => 'Keine Einträge in diesem Chart';
+
+  @override
+  String get chartLoadFailed => 'Chart konnte nicht geladen werden';
+
+  @override
+  String get chartPlay => 'Abspielen';
+
+  @override
+  String get chartResolving => 'Wird aufgelöst';
+
+  @override
+  String get chartReady => 'Bereit';
+
+  @override
+  String get chartAddToPlaylist => 'Zu Playlist hinzufügen';
+
+  @override
+  String get chartNoResolver =>
+      'Kein Content Resolver geladen. Plugin installieren zum Abspielen.';
+
+  @override
+  String get chartResolveFailed =>
+      'Konnte nicht aufgelöst werden. Suche stattdessen...';
+
+  @override
+  String get chartNoResolverAdd => 'Kein Content Resolver geladen.';
+
+  @override
+  String get chartNoMatch =>
+      'Kein Treffer gefunden. Versuche es mit einer manuellen Suche.';
+
+  @override
+  String get chartStatPeak => 'Spitze';
+
+  @override
+  String get chartStatWeeks => 'Wochen';
+
+  @override
+  String get chartStatChange => 'Wechsel';
+
+  @override
+  String menuSharePreparing(String title) {
+    return 'Bereite „$title“ zum Teilen vor.';
+  }
+
+  @override
+  String get menuOpenLinkFailed => 'Link konnte nicht geöffnet werden';
+
+  @override
+  String get localMusicFolders => 'Musikordner';
+
+  @override
+  String get localMusicRemoveFolder => 'Ordner entfernen';
+
+  @override
+  String get localMusicCloseSearch => 'Suche schließen';
+
+  @override
+  String get localMusicOpenSearch => 'Suche';
+
+  @override
+  String get localMusicNoMusicFound => 'Keine lokale Musik gefunden';
+
+  @override
+  String get localMusicNoSearchResults =>
+      'Keine Titel gefunden, die deiner Suche entsprechen.';
+
+  @override
+  String localMusicTrackCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Titel',
+      one: '1 Titel',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get importSongsTitle => 'Songs importieren';
+
+  @override
+  String get importNoPluginsLoaded =>
+      'Keine Importer-Plugins geladen.\nInstalliere ein Plugin, um Playlists externer Dienste zu importieren.';
+
+  @override
+  String get importCNMW MusicFiles => 'CNMW Music-Dateien importieren';
+
+  @override
+  String get importM3UFiles => 'M3U-Playlist importieren';
+
+  @override
+  String get importM3UNameDialogTitle => 'Playlist-Name';
+
+  @override
+  String get importM3UNameHint => 'Gib einen Namen für diese Playlist ein';
+
+  @override
+  String get importM3UNoTracks =>
+      'Keine gültigen Titel in der M3U-Datei gefunden.';
+
+  @override
+  String get importNoteTitle => 'Hinweis';
+
+  @override
+  String get importNoteMessage =>
+      'Du kannst nur Dateien importieren, die von CNMW Music erstellt wurden. Andere Dateien funktionieren nicht. Trotzdem fortfahren?';
+
+  @override
+  String get importTitle => 'Import';
+
+  @override
+  String get importCheckingUrl => 'URL wird geprüft...';
+
+  @override
+  String get importFetchingTracks => 'Titel werden abgerufen...';
+
+  @override
+  String get importSavingToLibrary => 'In Mediathek gespeichert...';
+
+  @override
+  String get importPasteUrlHint =>
+      'Playlist- oder Album-URL zum Importieren einfügen';
+
+  @override
+  String get importAction => 'Import';
+
+  @override
+  String importTrackCount(int count) {
+    return '$count Titel';
+  }
+
+  @override
+  String importResolvingProgress(int done, int total) {
+    return 'Titel werden aufgelöst: $done / $total';
+  }
+
+  @override
+  String importSaveTracks(int count) {
+    return '$count Titel speichern';
+  }
+
+  @override
+  String importTracksSaved(int count) {
+    return '$count Titel gespeichert!';
+  }
+
+  @override
+  String get importDone => 'Fertig';
+
+  @override
+  String get importMore => 'Mehr importieren';
+
+  @override
+  String get importUnknownError => 'Unbekannter Fehler';
+
+  @override
+  String get importTryAgain => 'Erneut versuchen';
+
+  @override
+  String get importSkipTrack => 'Diesen Titel überspringen';
+
+  @override
+  String get importMatchOptions => 'Treffer-Optionen';
+
+  @override
+  String get importSkipped => 'Übersprungen';
+
+  @override
+  String get importReorderTip => 'Playlist gedrückt halten zum Sortieren';
+
+  @override
+  String get importErrorCannotHandleUrl =>
+      'Dieses Plugin kann die angegebene URL nicht verarbeiten.';
+
+  @override
+  String get importErrorUnexpectedResponse => 'Unerwartete Antwort vom Plugin.';
+
+  @override
+  String importErrorFailedToCheck(String error) {
+    return 'Fehler beim Prüfen der URL: $error';
+  }
+
+  @override
+  String importErrorFailedToFetchInfo(String error) {
+    return 'Fehler beim Abrufen der Info: $error';
+  }
+
+  @override
+  String importErrorFailedToFetchTracks(String error) {
+    return 'Fehler beim Abrufen der Titel: $error';
+  }
+
+  @override
+  String importErrorFailedToSave(String error) {
+    return 'Fehler beim Speichern der Playlist: $error';
+  }
+
+  @override
+  String get playlistPinToTop => 'Oben anheften';
+
+  @override
+  String get playlistUnpin => 'Anheften lösen';
+
+  @override
+  String get snackbarInvalidFileFormat => 'Ungültiges Dateiformat';
+
+  @override
+  String get snackbarProcessingFile => 'Datei wird verarbeitet...';
+
+  @override
+  String get pluginManagerTabInstalled => 'Installiert';
+
+  @override
+  String get pluginManagerTabStore => 'Plugin Store';
+
+  @override
+  String get pluginManagerSelectPackage => 'Plugin-Paket wählen (.bex)';
+
+  @override
+  String get pluginManagerOutdatedManifest =>
+      'Plugin nutzt ein veraltetes Manifest. Einige Features könnten nicht funktionieren.';
+
+  @override
+  String get pluginManagerStatusActive => 'Aktiv';
+
+  @override
+  String get pluginManagerStatusInactive => 'Inaktiv';
+
+  @override
+  String get pluginRepositoryAddTitle => 'Repository hinzufügen';
+
+  @override
+  String get pluginRepositoryAddSubtitle =>
+      'Gib die URL einer gültigen Plugin-Repository JSON ein.';
+
+  @override
+  String get pluginRepositoryAddAction => 'Repository hinzufügen';
+
+  @override
+  String get pluginRepositoryTitle => 'Plugin-Repositorys';
+
+  @override
+  String get pluginRepositorySubtitle =>
+      'JSON-Quelle hinzufügen zum Suchen von Remote-Plugins.';
+
+  @override
+  String get pluginRepositoryEmpty => 'Noch keine Repositorys hinzugefügt.';
+
+  @override
+  String get pluginRepositoryUnknownUpdate => 'Unbekanntes Update';
+
+  @override
+  String get pluginRepositoryNoDescription => 'Keine Beschreibung vorhanden.';
+
+  @override
+  String get pluginRepositoryUrlCopied =>
+      'Repository-URL in Zwischenablage kopiert';
+
+  @override
+  String pluginRepositoryPluginsCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Plugins',
+      one: '1 Plugin',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String pluginRepositoryUpdatedOn(String date) {
+    return 'Aktualisiert am $date';
+  }
+
+  @override
+  String pluginRepositoryAvailableCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Plugins verfügbar',
+      one: '1 Plugin verfügbar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get pluginRepositoryOutdatedManifest =>
+      'Veraltetes Manifest. Fehler möglich.';
+
+  @override
+  String get pluginRepositoryUnknownPublisher => 'Unbekannter Herausgeber';
+
+  @override
+  String get pluginRepositoryActionRetry => 'Erneut versuchen';
+
+  @override
+  String get pluginRepositoryActionOutdated => 'Veraltet';
+
+  @override
+  String get pluginRepositoryActionInstalled => 'Installiert';
+
+  @override
+  String get pluginRepositoryActionInstall => 'Installieren';
+
+  @override
+  String get pluginRepositoryActionUnavailable => 'Nicht verfügbar';
+
+  @override
+  String get pluginRepositoryInstallFailed => 'Installation fehlgeschlagen.';
+
+  @override
+  String pluginRepositoryDownloadFailed(String name) {
+    return 'Fehler beim Download von $name.';
+  }
+
+  @override
+  String get pluginRepositoryErrorLoad => 'Fehler beim Laden der Repositorys.';
+
+  @override
+  String get pluginRepositoryErrorInvalid =>
+      'Ungültige Repository-URL oder Datei.';
+
+  @override
+  String get pluginRepositoryErrorRemove =>
+      'Fehler beim Entfernen des Repositorys.';
+
+  @override
+  String smartReplaceAppliedPlaylistsSummary(int count, String queue) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Playlists',
+      one: '1 Playlist',
+    );
+    return 'In $_temp0 ersetzt$queue.';
+  }
+
+  @override
+  String get lyricsSearchFieldLabel => 'Songtext suchen...';
+
+  @override
+  String get lyricsSearchEmptyPrompt =>
+      'Tippe Song oder Interpret, um Texte zu finden.';
+
+  @override
+  String lyricsSearchNoResults(String query) {
+    return 'Kein Songtext für „$query“ gefunden';
+  }
+
+  @override
+  String get lyricsSearchApplied => 'Songtext erfolgreich angewendet';
+
+  @override
+  String get lyricsSearchFetchFailed => 'Songtext konnte nicht geladen werden';
+
+  @override
+  String get lyricsSearchPreview => 'Vorschau';
+
+  @override
+  String get lyricsSearchPreviewTooltip => 'Songtext-Vorschau';
+
+  @override
+  String get lyricsSearchSynced => 'SYNCHRONISIERT';
+
+  @override
+  String get lyricsSearchPreviewLoadFailed =>
+      'Vorschau konnte nicht geladen werden.';
+
+  @override
+  String get lyricsSearchApplyAction => 'Songtext anwenden';
+
+  @override
+  String get lyricsSettingsSearchTitle => 'Benutzerdefinierte Texte suchen';
+
+  @override
+  String get lyricsSettingsSearchSubtitle => 'Online nach Alternativen suchen';
+
+  @override
+  String get lyricsSettingsSyncTitle => 'Synchronisierung anpassen';
+
+  @override
+  String get lyricsSettingsSyncSubtitle =>
+      'Texte korrigieren, die zu schnell/langsam sind';
+
+  @override
+  String get lyricsSettingsSaveTitle => 'Offline speichern';
+
+  @override
+  String get lyricsSettingsSaveSubtitle => 'Songtexte auf dem Gerät speichern';
+
+  @override
+  String get lyricsSettingsDeleteTitle => 'Gespeicherte Texte löschen';
+
+  @override
+  String get lyricsSettingsDeleteSubtitle => 'Offline-Songtextdaten entfernen';
+
+  @override
+  String get lyricsSyncTapToReset => 'Tippe zum Zurücksetzen';
+
+  @override
+  String get upNextTitle => 'Nächste Titel';
+
+  @override
+  String upNextItemsInQueue(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Elemente in Warteschlange',
+      one: '1 Element in Warteschlange',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get tooltipCopyToClipboard => 'In Zwischenablage kopieren';
+
+  @override
+  String get snackbarCopiedToClipboard => 'In Zwischenablage kopiert';
+
+  @override
+  String get tooltipSongInfo => 'Song-Info';
+
+  @override
+  String get snackbarCannotDeletePlayingSong =>
+      'Aktuell spielender Titel kann nicht gelöscht werden';
+
+  @override
+  String get playerLoopOff => 'Aus';
+
+  @override
+  String get playerLoopOne => 'Titel wiederholen';
+
+  @override
+  String get playerLoopAll => 'Alles wiederholen';
+
+  @override
+  String get snackbarOpeningAlbumPage => 'Originale Album-Seite wird geöffnet.';
+
+  @override
+  String updateAvailableBody(String ver, String build) {
+    return 'Neue Version von CNMW Music verfügbar!\n\nVersion: $ver+$build';
+  }
+
+  @override
+  String pluginSnackbarInstalled(String id) {
+    return 'Plugin „$id“ erfolgreich installiert';
+  }
+
+  @override
+  String pluginSnackbarDeleted(String id) {
+    return 'Plugin „$id“ erfolgreich gelöscht';
+  }
+
+  @override
+  String get pluginBootstrapTitle => 'CNMW Music wird eingerichtet';
+
+  @override
+  String pluginBootstrapProgress(int percent) {
+    return 'Neues Plugin-System wird konfiguriert... $percent%';
+  }
+
+  @override
+  String get pluginBootstrapHint => 'Dies passiert nur einmal.';
+
+  @override
+  String get backupSave => 'Sicherung als JSON speichern';
+
+  @override
+  String get backupShare => 'JSON-Sicherung teilen';
+
+  @override
+  String get backupPortableDetails =>
+      'Enthält Playlists, Favoriten, gespeicherte Sammlungen, Verläufe und übertragbare Einstellungen. Audiodateien, Konten und Geräteordner sind ausgeschlossen.';
+
+  @override
+  String get backupHistories => 'Wiedergabe- und Suchverlauf';
+
+  @override
+  String get backupPreferences => 'Übertragbare Einstellungen';
+
+  @override
+  String get backupNewCopy => 'Als neue Playlists importieren';
+
+  @override
+  String get backupMerge => 'Mit vorhandenen Daten zusammenführen';
+
+  @override
+  String get backupReplace => 'Ausgewählte Bereiche ersetzen';
+
+  @override
+  String get backupMergeDetails =>
+      'Vorhandene Titel, Metadaten und Einstellungen bleiben erhalten. Fehlende Titel werden in der Dateireihenfolge angehängt. Favoriten werden zusammengeführt.';
+
+  @override
+  String get backupReplaceWarning =>
+      'Die ausgewählten Bereiche werden ersetzt, einschließlich vorhandener Playlists und Favoriten, wenn die Mediathek ausgewählt ist. Nicht ausgewählte Bereiche und Dateien auf dem Gerät bleiben erhalten. Zuerst wird eine private Wiederherstellungskopie erstellt.';
+
+  @override
+  String get backupAutoDetails =>
+      'Bewahrt sieben private Wiederherstellungskopien auf. Die Prüfung erfolgt beim App-Start, höchstens einmal in 24 Stunden. Beim Deinstallieren werden diese Kopien gelöscht.';
+
+  @override
+  String get backupLocationDetails =>
+      'Wähle mit „Sicherung speichern“ einen Speicherort. Private Wiederherstellungskopien bleiben innerhalb der App.';
+
+  @override
+  String get backupResetDetails =>
+      'Setzt beim nächsten App-Start alle Datenbankdaten zurück. Heruntergeladene Audiodateien und installierte Plugin-Dateien bleiben auf diesem Gerät. Zuerst wird eine private Wiederherstellungskopie erstellt.';
+
+  @override
+  String get backupResetPending =>
+      'Zurücksetzen geplant. Schließe CNMW Music und öffne es erneut, um den Vorgang abzuschließen.';
+
+  @override
+  String backupPreviewCounts(int playlists, int tracks) {
+    return 'Playlists: $playlists · Titel: $tracks';
+  }
+
+  @override
+  String backupImportResult(
+      int playlists, int tracks, int history, int settings) {
+    return 'Import abgeschlossen. Erstellte Playlists: $playlists; hinzugefügte Titeleinträge: $tracks; hinzugefügte Verlaufseinträge: $history; angewendete Einstellungen: $settings.';
+  }
+
+  @override
+  String get backupRefreshFailed =>
+      'Die Daten wurden importiert. Schließe CNMW Music und öffne es erneut, um alle Einstellungen zu aktualisieren.';
+
+  @override
+  String get backupRecoveryCopies => 'Wiederherstellungskopien';
+
+  @override
+  String get backupNoRecoveryCopies =>
+      'Noch keine Wiederherstellungskopien vorhanden.';
+
+  @override
+  String get backupRecoveryAutomatic => 'Automatische Sicherung';
+
+  @override
+  String get backupRecoveryBeforeImport => 'Vor einem Import';
+
+  @override
+  String get backupRecoveryBeforeReset => 'Vor dem Zurücksetzen';
+
+  @override
+  String get backupCancelReset => 'Zurücksetzen abbrechen';
+
+  @override
+  String get libraryRecoveryTitle => 'Fehlende Mediathek wiederherstellen';
+
+  @override
+  String get libraryRecoverySubtitle =>
+      'Nach Playlists und Download-Einträgen suchen, die aus früheren Versionen erhalten geblieben sind.';
+
+  @override
+  String get libraryRecoveryChooseSource =>
+      'Wähle eine aufbewahrte Datenbank zum Durchsuchen. Deine aktuelle Mediathek und die Originaldateien bleiben erhalten.';
+
+  @override
+  String get libraryRecoveryNoSources =>
+      'Keine aufbewahrten Datenbanken gefunden. Audiodateien allein können die ursprüngliche Zuordnung zu Playlists nicht wiederherstellen.';
+
+  @override
+  String libraryRecoverySummary(
+      int tracks, int playlists, int downloads, int unavailable) {
+    return 'Gefunden: $tracks Titel, $playlists Playlists und $downloads Download-Einträge. Derzeit nicht verfügbare Dateien: $unavailable; ihre Einträge bleiben erhalten.';
+  }
+
+  @override
+  String libraryRecoveryWarnings(int broken) {
+    return 'Nicht wiederherstellbare Playlist-Verweise in dieser Kopie: $broken.';
+  }
+
+  @override
+  String get libraryRecoveryMergeDetails =>
+      'Die Wiederherstellung ergänzt fehlende Titel, Playlist-Einträge und Download-Einträge. Vorhandene Playlists, Dateizuordnungen und Einstellungen bleiben erhalten. Zuerst wird eine Wiederherstellungskopie erstellt. Wiederhole den Vorgang mit einer anderen aufbewahrten Kopie, falls diese weitere Teile deiner Mediathek enthält.';
+
+  @override
+  String get libraryRecoveryMerge =>
+      'Wiederhergestellte Mediathek zusammenführen';
+
+  @override
+  String libraryRecoveryComplete(int entries, int downloads) {
+    return 'Wiederherstellung abgeschlossen. Hinzugefügte Playlist-Einträge: $entries; Download-Einträge: $downloads.';
+  }
+
+  @override
+  String get backupStartupFailed => 'CNMW Music konnte nicht starten';
+
+  @override
+  String get backupStartupFailedDetails =>
+      'Der Start wurde angehalten, ohne deine Datenbank automatisch zu reparieren oder zu ersetzen. Schließe die App und versuche es erneut. Bewahre deine App-Daten auf, wenn du diesen Fehler meldest.';
+
+  @override
+  String get lyricsTitle => 'Liedtext';
+
+  @override
+  String get lyricsEnterFullscreen => 'Liedtext im Vollbild';
+
+  @override
+  String get lyricsExitFullscreen => 'Vollbild verlassen';
+
+  @override
+  String get lyricsFollowPlayback => 'Wiedergabe folgen';
+
+  @override
+  String get lyricsTimingEarlier => 'Früher anzeigen';
+
+  @override
+  String get lyricsTimingLater => 'Später anzeigen';
+
+  @override
+  String get lyricsTimingSave => 'Timing speichern';
+
+  @override
+  String get lyricsSaved => 'Liedtext gespeichert.';
+
+  @override
+  String get lyricsSaveFailed =>
+      'Liedtext konnte nicht gespeichert werden. Versuche es erneut.';
+
+  @override
+  String get lyricsDeleteFailed =>
+      'Gespeicherter Liedtext konnte nicht gelöscht werden. Versuche es erneut.';
+
+  @override
+  String get artistTopSongs => 'Beliebteste Titel';
+
+  @override
+  String get artistLoadFailed => 'Interpret konnte nicht geladen werden';
+
+  @override
+  String get artistNoTopSongs => 'Keine beliebten Titel verfügbar';
+
+  @override
+  String get artistNoAlbums => 'Keine Alben verfügbar';
+
+  @override
+  String get snackbarOpeningArtistPage =>
+      'Originalseite des Interpreten wird geöffnet.';
+
+  @override
+  String get snackbarOpeningPlaylistPage =>
+      'Originalseite der Playlist wird geöffnet.';
+
+  @override
+  String get playlistSaveOrderFailed =>
+      'Playlist-Reihenfolge konnte nicht gespeichert werden. Versuche es erneut.';
+
+  @override
+  String get playlistReorderTracksHint =>
+      'Halte den Griff gedrückt, um Titel umzusortieren';
+
+  @override
+  String get playlistTrackCountLabel => 'Anzahl der Titel';
+
+  @override
+  String get playlistDescription => 'Beschreibung';
+
+  @override
+  String get playlistOriginalUrl => 'Original-URL';
+
+  @override
+  String get searchSearching => 'Suche läuft…';
+
+  @override
+  String get searchSuggestions => 'Vorschläge';
+
+  @override
+  String get searchTopResults => 'Beste Ergebnisse';
+
+  @override
+  String get changelogEmpty => 'Keine Änderungsinformationen verfügbar.';
+
+  @override
+  String get changelogTitle => 'Was ist neu?';
+
+  @override
+  String get changelogLatest => 'Neueste';
+
+  @override
+  String get changelogNext => 'Nächste Version';
+
+  @override
+  String changelogVersion(String version) {
+    return 'Version $version';
+  }
+
+  @override
+  String get pluginBootstrapIncomplete => 'Einrichtung unvollständig';
+
+  @override
+  String get pluginBootstrapRetryBody =>
+      'Einige Plugins konnten gerade nicht installiert werden. Versuche es erneut, um die Einrichtung abzuschließen.';
+
+  @override
+  String get pluginBootstrapInternetTitle => 'Internetverbindung erforderlich';
+
+  @override
+  String get pluginBootstrapInternetBody =>
+      'CNMW Music benötigt einmalig eine Internetverbindung, um dein Land zu erkennen und die Plugin-Engine einzurichten.';
+
+  @override
+  String get buttonExit => 'Beenden';
+
+  @override
+  String get eqSource => 'Equalizer-Quelle';
+
+  @override
+  String get eqBuiltin => 'App-Equalizer';
+
+  @override
+  String get eqBuiltinSubtitle => '10-Band-Equalizer';
+
+  @override
+  String get eqDevice => 'Geräte-Equalizer';
+
+  @override
+  String get eqDeviceSubtitle => 'System / Dolby Atmos';
+
+  @override
+  String get eqDeviceHint =>
+      'Der App-Equalizer ist deaktiviert. Konfiguriere den Geräte-Equalizer in den Klangeinstellungen deines Geräts.';
+
+  @override
+  String get eqPresets => 'Voreinstellungen';
+
+  @override
+  String get eqCustomCurve => 'Eigene Kurve';
+
+  @override
+  String get shortcutMuted => 'Stumm';
+
+  @override
+  String get shortcutUnmuted => 'Ton an';
+
+  @override
+  String get shortcutShuffleOn => 'Zufallswiedergabe an';
+
+  @override
+  String get shortcutShuffleOff => 'Zufallswiedergabe aus';
+
+  @override
+  String get shortcutRepeatOff => 'Wiederholung aus';
+
+  @override
+  String get shortcutLiked => 'Zu Favoriten hinzugefügt';
+
+  @override
+  String get shortcutUnliked => 'Aus Favoriten entfernt';
+
+  @override
+  String downloadFolderSelectFailed(String error) {
+    return 'Download-Ordner konnte nicht ausgewählt werden: $error';
+  }
+
+  @override
+  String get aboutVersionUnavailable => 'Version nicht verfügbar';
+
+  @override
+  String get backupNewCopyDetails =>
+      'Erstellt separate Playlists und führt Favoriten zusammen. Vorhandene Playlists bleiben erhalten. Ausgewählte Verläufe und Einstellungen werden ebenfalls importiert.';
+
+  @override
+  String get changelogCurrent => 'Aktuell';
+
+  @override
+  String get backupLibrary =>
+      'Mediathek (Playlists, Favoriten und gespeicherte Sammlungen)';
+
+  @override
+  String get eqPresetFlat => 'Neutral';
+
+  @override
+  String get eqPresetAcoustic => 'Akustisch';
+
+  @override
+  String get eqPresetBassBoost => 'Bassverstärkung';
+
+  @override
+  String get eqPresetBassReducer => 'Bassabsenkung';
+
+  @override
+  String get eqPresetClassical => 'Klassik';
+
+  @override
+  String get eqPresetDance => 'Dance';
+
+  @override
+  String get eqPresetDeep => 'Tief';
+
+  @override
+  String get eqPresetEDM => 'EDM';
+
+  @override
+  String get eqPresetElectronic => 'Elektronisch';
+
+  @override
+  String get eqPresetHipHop => 'Hip-Hop';
+
+  @override
+  String get eqPresetJazz => 'Jazz';
+
+  @override
+  String get eqPresetLatin => 'Latin';
+
+  @override
+  String get eqPresetLive => 'Live';
+
+  @override
+  String get eqPresetLounge => 'Lounge';
+
+  @override
+  String get eqPresetMetal => 'Metal';
+
+  @override
+  String get eqPresetPiano => 'Klavier';
+
+  @override
+  String get eqPresetPop => 'Pop';
+
+  @override
+  String get eqPresetRB => 'R&B';
+
+  @override
+  String get eqPresetRock => 'Rock';
+
+  @override
+  String get eqPresetSmallSpeakers => 'Kleine Lautsprecher';
+
+  @override
+  String get eqPresetSpokenWord => 'Sprache';
+
+  @override
+  String get eqPresetTrebleBoost => 'Höhenverstärkung';
+
+  @override
+  String get eqPresetTrebleReducer => 'Höhenabsenkung';
+
+  @override
+  String get eqPresetVocalBooster => 'Gesangsverstärkung';
+
+  @override
+  String get eqPresetCustom => 'Benutzerdefiniert';
+
+  @override
+  String get lastfmStatusSection => 'Scrobble-Status';
+
+  @override
+  String get lastfmStatusSynced => 'Alles auf dem neuesten Stand';
+
+  @override
+  String get lastfmStatusSending => 'Wird gesendet…';
+
+  @override
+  String lastfmStatusQueued(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count Scrobbles warten',
+      one: '1 Scrobble wartet',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lastfmStatusRetrying => 'Offline · neuer Versuch gleich';
+
+  @override
+  String get lastfmStatusAuthPaused => 'Pausiert · erneut anmelden';
+
+  @override
+  String get lastfmStatusOff => 'Scrobbling ist ausgeschaltet';
+
+  @override
+  String get lastfmStatQueued => 'In Warteschlange';
+
+  @override
+  String get lastfmStatLastSent => 'Zuletzt gesendet';
+
+  @override
+  String get lastfmNever => 'Nie';
+
+  @override
+  String get lastfmJustNow => 'Gerade eben';
+
+  @override
+  String lastfmMinutesAgo(int n) {
+    return 'vor $n Min.';
+  }
+
+  @override
+  String lastfmHoursAgo(int n) {
+    return 'vor $n Std.';
+  }
+
+  @override
+  String lastfmDaysAgo(int n) {
+    return 'vor $n T.';
+  }
+
+  @override
+  String get lastfmLastTrack => 'Zuletzt gescrobbelt';
+
+  @override
+  String get lastfmErrorNetwork =>
+      'Last.fm ist nicht erreichbar. Deine Scrobbles sind sicher und werden automatisch gesendet.';
+
+  @override
+  String get lastfmErrorAuth =>
+      'Deine Last.fm-Sitzung ist nicht mehr gültig. Entferne die Schlüssel und authentifiziere dich erneut.';
+
+  @override
+  String lastfmErrorRejected(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Last.fm hat $count Scrobbles abgelehnt und sie wurden verworfen.',
+      one: 'Last.fm hat 1 Scrobble abgelehnt und es wurde verworfen.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get lastfmSyncNow => 'Jetzt synchronisieren';
+
+  @override
+  String get lastfmClearQueue => 'Warteschlange leeren';
+
+  @override
+  String get lastfmQueueCleared => 'Scrobble-Warteschlange geleert';
+
+  @override
+  String get settingsDiscord => 'Discord';
+
+  @override
+  String get settingsDiscordSubtitle =>
+      'Rich Presence: zeige, was du gerade hörst.';
+
+  @override
+  String get discordTitle => 'Discord';
+
+  @override
+  String get discordEnable => 'Auf Discord anzeigen';
+
+  @override
+  String get discordEnableSubtitle =>
+      'Teile den aktuellen Song in deinem Discord-Profil.';
+
+  @override
+  String get discordStatusIdle => 'Bereit zum Teilen';
+
+  @override
+  String get discordStatusConnecting => 'Verbinde mit Discord…';
+
+  @override
+  String discordStatusConnected(String name) {
+    return 'Verbunden als $name';
+  }
+
+  @override
+  String get discordStatusConnectedNoUser => 'Mit Discord verbunden';
+
+  @override
+  String get discordStatusNotFound => 'Discord läuft nicht';
+
+  @override
+  String get discordStatusError => 'Discord hat die Verbindung abgelehnt';
+
+  @override
+  String get discordReconnect => 'Neu verbinden';
+
+  @override
+  String get discordSectionPreview => 'Vorschau';
+
+  @override
+  String get discordSectionCard => 'Darstellung';
+
+  @override
+  String get discordSectionPrivacy => 'Privatsphäre';
+
+  @override
+  String get discordPreviewEmpty =>
+      'Spiele einen Song ab, um deine Karte zu sehen.';
+
+  @override
+  String get discordKindListening => 'Hört CNMW Music';
+
+  @override
+  String get discordWhenPaused => 'Bei Pause';
+
+  @override
+  String get discordPausedKeep => 'Weiter anzeigen';
+
+  @override
+  String get discordPausedHideLater => 'Nach 5 Minuten ausblenden';
+
+  @override
+  String get discordPausedHide => 'Sofort ausblenden';
+
+  @override
+  String get discordShowArtwork => 'Albumcover';
+
+  @override
+  String get discordShowArtworkSubtitle => 'Cover mit Play- oder Pause-Symbol.';
+
+  @override
+  String get discordShowProgress => 'Zeitleiste';
+
+  @override
+  String get discordShowProgressSubtitle =>
+      'Live-Fortschrittsbalken, der Sprüngen folgt.';
+
+  @override
+  String get discordShowLinks => 'Klickbare Links';
+
+  @override
+  String get discordShowLinksSubtitle =>
+      'Song, Künstler und Album öffnen ihre Seiten.';
+
+  @override
+  String get discordShareLocal => 'Lokale Dateien teilen';
+
+  @override
+  String get discordShareLocalSubtitle =>
+      'Auch Songs aus deiner lokalen Mediathek anzeigen.';
+
+  @override
+  String get discordFooter =>
+      'Die Discord-Desktop-App muss auf diesem Computer laufen. Änderungen gelten sofort; Discord akzeptiert etwa ein Update alle 4 Sekunden.';
+
+  @override
+  String discordStatusRetry(int seconds) {
+    return 'Neuer Versuch in $seconds s';
+  }
+
+  @override
+  String get discordStatusIdleDetail =>
+      'Verbindet sich automatisch, sobald Musik läuft.';
+
+  @override
+  String get discordPausedKeepSubtitle =>
+      'Zeigt ein Pause-Symbol ohne Zeitleiste.';
+
+  @override
+  String get discordPausedHideLaterSubtitle =>
+      'Kurze Pausen behalten die Karte, lange entfernen sie.';
+
+  @override
+  String get discordPausedHideSubtitle =>
+      'Wird beim Pausieren sofort entfernt.';
+
+  @override
+  String get discordPreviewCaption => 'So sehen dich Freunde auf Discord.';
+
+  @override
+  String get discordStatusText => 'Statustext';
+
+  @override
+  String get discordStatusTextSubtitle =>
+      'Was Freunde neben deinem Namen sehen.';
+
+  @override
+  String get discordStatusTextApp => 'App-Name';
+
+  @override
+  String get discordStatusTextArtist => 'Künstler';
+
+  @override
+  String get discordStatusTextSong => 'Songtitel';
+
+  @override
+  String get libraryReorderHint => 'Zum Sortieren ziehen';
+
+  @override
+  String get libraryReorderHintPinned =>
+      'Zum Sortieren ziehen. Angeheftete bleiben oben.';
+
+  @override
+  String get tooltipRemoveFromQueue => 'Aus der Warteschlange entfernen';
+
+  @override
+  String get windowMinimize => 'Minimieren';
+
+  @override
+  String get windowMaximize => 'Maximieren';
+
+  @override
+  String get windowRestore => 'Verkleinern';
+
+  @override
+  String get windowClose => 'Schließen';
+
+  @override
+  String get settingsWindow => 'Fenster & Infobereich';
+
+  @override
+  String get settingsWindowSubtitle =>
+      'Schließen-Taste, Symbol im Infobereich und Wiedergabe im Hintergrund';
+
+  @override
+  String get windowCloseSection => 'Beim Schließen des Fensters';
+
+  @override
+  String get windowCloseTray => 'Im Infobereich weiterspielen';
+
+  @override
+  String get windowCloseTrayMac => 'In der Menüleiste weiterspielen';
+
+  @override
+  String get windowCloseTraySubtitle =>
+      'Blendet das Fenster aus, die Musik läuft weiter. Verbraucht am wenigsten Ressourcen.';
+
+  @override
+  String get windowCloseMinimize => 'Fenster minimieren';
+
+  @override
+  String get windowCloseMinimizeSubtitle =>
+      'Spielt weiter, das Fenster wird in die Taskleiste minimiert.';
+
+  @override
+  String get windowCloseMinimizeSubtitleMac =>
+      'Spielt weiter, das Fenster wird ins Dock minimiert.';
+
+  @override
+  String get windowCloseQuit => 'CNMW Music beenden';
+
+  @override
+  String get windowCloseQuitSubtitle =>
+      'Beendet die Wiedergabe und schließt die App vollständig.';
+
+  @override
+  String get windowTrayUnavailable =>
+      'Kein Infobereich verfügbar, daher wird das Fenster stattdessen minimiert.';
+
+  @override
+  String get windowTrayMenuSection => 'Menü im Infobereich';
+
+  @override
+  String get windowTrayFootnote =>
+      'Klicke auf das Symbol im Infobereich, um CNMW Music zurückzuholen, oder klicke mit der rechten Maustaste für die Wiedergabesteuerung.';
+
+  @override
+  String get windowTrayFootnoteMac =>
+      'Klicke auf das Symbol in der Menüleiste für die Wiedergabesteuerung oder um CNMW Music zurückzuholen.';
+
+  @override
+  String get windowTrayFootnoteLinux =>
+      'Öffne das Menü des Symbols für die Wiedergabesteuerung. Unter GNOME ist dafür die Erweiterung AppIndicator nötig.';
+
+  @override
+  String get trayNothingPlaying => 'Keine Wiedergabe';
+
+  @override
+  String get trayPlay => 'Wiedergabe';
+
+  @override
+  String get trayPause => 'Pause';
+
+  @override
+  String get trayNext => 'Weiter';
+
+  @override
+  String get trayPrevious => 'Zurück';
+
+  @override
+  String get trayShowWindow => 'CNMW Music anzeigen';
+
+  @override
+  String get trayHideWindow => 'CNMW Music ausblenden';
+
+  @override
+  String get trayQuit => 'CNMW Music beenden';
+
+  @override
+  String get feedKindAnnouncement => 'Neuigkeiten';
+
+  @override
+  String get feedKindApp => 'Neue App';
+
+  @override
+  String get feedKindForm => 'Anmelden';
+
+  @override
+  String get feedKindNotice => 'Wichtig';
+
+  @override
+  String get feedKindUpdate => 'Update';
+
+  @override
+  String feedUpdateTitle(String version) {
+    return 'CNMW Music $version ist verfügbar';
+  }
+
+  @override
+  String get feedUpdateBody =>
+      'Sieh dir die Neuerungen an und lade es herunter.';
+
+  @override
+  String get feedUpdateAction => 'Update ansehen';
+
+  @override
+  String get feedOpen => 'Öffnen';
+
+  @override
+  String get feedDismiss => 'Ausblenden';
+
+  @override
+  String get feedNew => 'Neu';
+
+  @override
+  String get feedDraft => 'Entwurf';
+
+  @override
+  String get feedPreview => 'Entwürfe anzeigen';
+
+  @override
+  String get feedEmpty => 'Du bist auf dem neuesten Stand';
+
+  @override
+  String get feedEmptySubtitle =>
+      'Neuigkeiten, neue Apps und Updates erscheinen hier.';
+
+  @override
+  String get settingsNotifications => 'Updates & Neuigkeiten';
+
+  @override
+  String get settingsNotificationsSubtitle =>
+      'Update-Hinweise, Neuigkeiten und Ankündigungen';
+
+  @override
+  String get feedSection => 'Neuigkeiten & Ankündigungen';
+
+  @override
+  String get feedOnHome => 'Auf der Startseite zeigen';
+
+  @override
+  String get feedOnHomeSubtitle =>
+      'Eine kleine Karte für Neuigkeiten und neue Apps. Wichtige Hinweise erscheinen immer.';
+}
