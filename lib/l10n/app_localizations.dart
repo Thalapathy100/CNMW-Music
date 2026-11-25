@@ -2454,11 +2454,11 @@ abstract class AppLocalizations {
   /// **'No content-importer plugins loaded.\nInstall an importer plugin to import playlists from external services.'**
   String get importNoPluginsLoaded;
 
-  /// No description provided for @importCNMW MusicFiles.
+  /// No description provided for @importCnmwMusicFiles.
   ///
   /// In en, this message translates to:
   /// **'Import CNMW Music Files'**
-  String get importCNMW MusicFiles;
+  String get importCnmwMusicFiles;
 
   /// No description provided for @importM3UFiles.
   ///

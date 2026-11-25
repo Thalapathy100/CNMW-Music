@@ -1325,7 +1325,7 @@ class AppLocalizationsDe extends AppLocalizations {
       'Keine Importer-Plugins geladen.\nInstalliere ein Plugin, um Playlists externer Dienste zu importieren.';
 
   @override
-  String get importCNMW MusicFiles => 'CNMW Music-Dateien importieren';
+  String get importCnmwMusicFiles => 'CNMW Music-Dateien importieren';
 
   @override
   String get importM3UFiles => 'M3U-Playlist importieren';

@@ -454,7 +454,7 @@
 
   "importSongsTitle": "曲をインポート",
   "importNoPluginsLoaded": "インポータープラグインがありません。外部サービスから取り込むにはインストールしてください。",
-  "importCNMW MusicFiles": "CNMW Music ファイルをインポート",
+  "importCnmwMusicFiles": "CNMW Music ファイルをインポート",
   "importM3UFiles": "M3U プレイリストをインポート",
   "importM3UNameDialogTitle": "プレイリスト名",
   "importM3UNameHint": "名前を入力してください",

@@ -1335,7 +1335,7 @@ class AppLocalizationsFr extends AppLocalizations {
       'Aucune extension d\'importation de contenu active.\nInstallez-en une pour importer des playlists d\'autres services.';
 
   @override
-  String get importCNMW MusicFiles => 'Importer des fichiers CNMW Music';
+  String get importCnmwMusicFiles => 'Importer des fichiers CNMW Music';
 
   @override
   String get importM3UFiles => 'Importer une playlist M3U';

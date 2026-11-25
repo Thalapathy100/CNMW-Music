@@ -1326,7 +1326,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'No hay complementos importadores cargados.\nInstala uno para importar desde servicios externos.';
 
   @override
-  String get importCNMW MusicFiles => 'Importar archivos CNMW Music';
+  String get importCnmwMusicFiles => 'Importar archivos CNMW Music';
 
   @override
   String get importM3UFiles => 'Importar lista M3U';

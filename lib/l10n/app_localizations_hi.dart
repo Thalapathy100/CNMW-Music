@@ -1323,7 +1323,7 @@ class AppLocalizationsHi extends AppLocalizations {
       'कोई इम्पोर्टर प्लगइन मौजूद नहीं है।\nबाहरी जगहों से प्लेलिस्ट लाने के लिए पहले कोई इम्पोर्टर प्लगइन इंस्टॉल करें।';
 
   @override
-  String get importCNMW MusicFiles => 'CNMW Music फ़ाइलें इम्पोर्ट करें';
+  String get importCnmwMusicFiles => 'CNMW Music फ़ाइलें इम्पोर्ट करें';
 
   @override
   String get importM3UFiles => 'M3U प्लेलिस्ट इम्पोर्ट करें';

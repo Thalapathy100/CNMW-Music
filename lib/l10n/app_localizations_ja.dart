@@ -1246,7 +1246,7 @@ class AppLocalizationsJa extends AppLocalizations {
       'インポータープラグインがありません。外部サービスから取り込むにはインストールしてください。';
 
   @override
-  String get importCNMW MusicFiles => 'CNMW Music ファイルをインポート';
+  String get importCnmwMusicFiles => 'CNMW Music ファイルをインポート';
 
   @override
   String get importM3UFiles => 'M3U プレイリストをインポート';

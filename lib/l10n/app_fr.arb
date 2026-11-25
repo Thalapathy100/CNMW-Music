@@ -619,7 +619,7 @@
   },
   "importSongsTitle": "Importer des morceaux",
   "importNoPluginsLoaded": "Aucune extension d'importation de contenu active.\nInstallez-en une pour importer des playlists d'autres services.",
-  "importCNMW MusicFiles": "Importer des fichiers CNMW Music",
+  "importCnmwMusicFiles": "Importer des fichiers CNMW Music",
   "importM3UFiles": "Importer une playlist M3U",
   "importM3UNameDialogTitle": "Nom de la playlist",
   "importM3UNameHint": "Saisissez un nom pour cette playlist",

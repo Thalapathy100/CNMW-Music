@@ -454,7 +454,7 @@
 
   "importSongsTitle": "导入歌曲",
   "importNoPluginsLoaded": "未加载内容导入插件。\n请安装导入插件以从外部服务导入歌单。",
-  "importCNMW MusicFiles": "导入 CNMW Music 文件",
+  "importCnmwMusicFiles": "导入 CNMW Music 文件",
   "importM3UFiles": "导入 M3U 歌单",
   "importM3UNameDialogTitle": "歌单名称",
   "importM3UNameHint": "为此歌单输入名称",

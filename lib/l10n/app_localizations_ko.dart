@@ -1247,7 +1247,7 @@ class AppLocalizationsKo extends AppLocalizations {
       '가져오기 플러그인이 없습니다. 외부 플레이리스트를 가져오려면 플러그인을 설치하세요.';
 
   @override
-  String get importCNMW MusicFiles => 'CNMW Music 파일 가져오기';
+  String get importCnmwMusicFiles => 'CNMW Music 파일 가져오기';
 
   @override
   String get importM3UFiles => 'M3U 플레이리스트 가져오기';

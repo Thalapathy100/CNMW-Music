@@ -1296,7 +1296,7 @@ class AppLocalizationsTr extends AppLocalizations {
       'Etkin içerik içe aktarıcısı yok.\nDiğer hizmetlerden çalma listesi almak için bir içe aktarma eklentisi yükleyin.';
 
   @override
-  String get importCNMW MusicFiles => 'CNMW Music dosyalarını içe aktar';
+  String get importCnmwMusicFiles => 'CNMW Music dosyalarını içe aktar';
 
   @override
   String get importM3UFiles => 'M3U çalma listesini içe aktar';

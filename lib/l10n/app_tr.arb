@@ -619,7 +619,7 @@
   },
   "importSongsTitle": "Şarkı içe aktar",
   "importNoPluginsLoaded": "Etkin içerik içe aktarıcısı yok.\nDiğer hizmetlerden çalma listesi almak için bir içe aktarma eklentisi yükleyin.",
-  "importCNMW MusicFiles": "CNMW Music dosyalarını içe aktar",
+  "importCnmwMusicFiles": "CNMW Music dosyalarını içe aktar",
   "importM3UFiles": "M3U çalma listesini içe aktar",
   "importM3UNameDialogTitle": "Çalma listesi adı",
   "importM3UNameHint": "Bu çalma listesi için bir ad girin",
