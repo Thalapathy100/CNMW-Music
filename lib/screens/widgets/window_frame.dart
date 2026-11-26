@@ -378,7 +378,7 @@ class _CaptionTitle extends StatelessWidget {
             duration: const Duration(milliseconds: 150),
             opacity: focused ? 1 : 0.5,
             child: Image.asset(
-              'assets/icons/BloomeeLogo4.png',
+              'assets/icons/cnmw_logo.png',
               width: 16,
               height: 16,
               cacheWidth: (16 * dpr).ceil() * 2,
@@ -390,7 +390,7 @@ class _CaptionTitle extends StatelessWidget {
           const SizedBox(width: 10),
           Flexible(
             child: Text(
-              'Bloomee',
+              'CNMW Music',
               maxLines: 1,
               overflow: TextOverflow.fade,
               softWrap: false,

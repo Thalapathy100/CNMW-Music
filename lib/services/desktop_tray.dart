@@ -114,7 +114,8 @@ abstract final class DesktopTray {
       await trayManager.setContextMenu(menu);
       if (!Platform.isLinux) {
         // Windows limits tooltips to 127 characters.
-        final tip = nowPlaying == null ? 'Bloomee' : 'Bloomee\n$nowPlaying';
+        final tip =
+            nowPlaying == null ? 'CNMW Music' : 'CNMW Music\n$nowPlaying';
         await trayManager
             .setToolTip(tip.length > 127 ? '${tip.substring(0, 126)}…' : tip);
       }

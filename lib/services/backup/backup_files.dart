@@ -93,7 +93,7 @@ class BackupFiles {
   Future<void> share(String source, {Rect? origin}) async {
     await SharePlus.instance.share(ShareParams(
       files: [XFile(source, mimeType: 'application/json')],
-      subject: 'Bloomee backup',
+      subject: 'CNMW Music backup',
       sharePositionOrigin: origin,
     ));
   }

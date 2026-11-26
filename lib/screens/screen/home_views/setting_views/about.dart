@@ -3,34 +3,33 @@ import 'package:Bloomee/l10n/app_localizations.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'dart:math';
 
 // Color palette
-// Darken background slightly for higher contrast against foreground elements
-const Color kBackgroundColor = Color(0xFF0B0710);
+const Color kBackgroundColor = Color(0xFF0B0E14);
 const Color kPrimaryTextColor = Colors.white;
-const Color kSecondaryTextColor = Color(0xFFC3B9CF);
-// Make the frosted card a bit less translucent so it reads clearer on darkbg
-const Color kCardBackgroundColor = Color.fromRGBO(40, 32, 50, 0.18);
+const Color kSecondaryTextColor = Color(0xFFB8C2D1);
+const Color kCardBackgroundColor = Color.fromRGBO(23, 27, 37, 0.92);
 
 // Gradients
 const Gradient kTitleGradient = LinearGradient(
-  colors: [Color(0xFFFEBD88), Color(0xFFF17C98)],
+  colors: [Color(0xFF00E5FF), Color(0xFFB347FF)],
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
 );
 const Gradient kButtonGradient = LinearGradient(
-  colors: [Color(0xFFFFB88C), Color(0xFFDE6262)],
+  colors: [Color(0xFF00E5FF), Color(0xFFB347FF)],
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
 );
 const Gradient kHandleGradient = LinearGradient(
-  colors: [Color(0xFFFFB88C), Color(0xFFF88A6B)],
+  colors: [Color(0xFF00E5FF), Color(0xFFB347FF)],
   begin: Alignment.topLeft,
   end: Alignment.bottomRight,
 );
 const Gradient kWaveformGradient = LinearGradient(
-  colors: [Color(0xFFE3729A), Color(0xFFF88A6B)],
+  colors: [Color(0xFF00E5FF), Color(0xFFB347FF)],
   begin: Alignment.centerLeft,
   end: Alignment.centerRight,
 );
@@ -93,8 +92,6 @@ class _AboutState extends State<About> {
                             const Spacer(),
                             RepaintBoundary(
                                 child: _buildInfoCard(context, l10n)),
-                            const SizedBox(height: 50),
-                            RepaintBoundary(child: _buildSupportSection(l10n)),
                             const Spacer(),
                             // Footer moved to bottom of screen
                             const SizedBox(height: 12),
@@ -138,22 +135,20 @@ class _AboutState extends State<About> {
                 shaderCallback: (bounds) => kTitleGradient.createShader(
                   Rect.fromLTWH(0, 0, bounds.width, bounds.height),
                 ),
-                // Use Wrap so title + flower can wrap on narrow widths.
-                child: const Wrap(
+                // Use Wrap so the title and icon can wrap on narrow widths.
+                child: Wrap(
                   alignment: WrapAlignment.center,
                   crossAxisAlignment: WrapCrossAlignment.center,
                   spacing: 6,
                   children: [
                     Text(
                       'CNMW Music',
-                      style: TextStyle(
+                      style: GoogleFonts.spaceGrotesk(
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
-                        fontFamily: 'Gilroy',
                       ),
                     ),
-                    // Small animated flower
-                    GentleRotatingFlower(size: 28),
+                    const Icon(Icons.headphones_rounded, size: 28),
                   ],
                 ),
               ),
@@ -163,8 +158,7 @@ class _AboutState extends State<About> {
               l10n.aboutCraftingSubtitle,
               style: const TextStyle(
                   fontSize: 16,
-                  color: kSecondaryTextColor,
-                  fontFamily: 'Gilroy'),
+                  color: kSecondaryTextColor),
             ),
             const SizedBox(height: 35),
             Container(
@@ -182,7 +176,7 @@ class _AboutState extends State<About> {
                       gradient: kHandleGradient,
                       boxShadow: [
                         BoxShadow(
-                          color: const Color(0xFFF88A6B).withValues(alpha: 0.5),
+                          color: const Color(0xFF00E5FF).withValues(alpha: 0.5),
                           blurRadius: 10,
                         ),
                       ],
@@ -199,7 +193,6 @@ class _AboutState extends State<About> {
                         color: kPrimaryTextColor,
                         fontWeight: FontWeight.w500,
                         fontSize: 16,
-                        fontFamily: 'Gilroy',
                         shadows: [
                           Shadow(
                             color: const Color.fromARGB(255, 255, 246, 238)
@@ -223,24 +216,6 @@ class _AboutState extends State<About> {
               runSpacing: 12.0, // Spacing when items wrap to the next line
               spacing: 12.0, // Horizontal spacing
               children: [
-                // Parent site for all Bloomeex apps
-                _InfoPill(
-                    icon: Icons.language,
-                    text: 'Bloomeex',
-                    tooltip: 'bloomeex.org',
-                    onTap: () {
-                      launchUrl(Uri.parse('https://bloomeex.org'),
-                          mode: LaunchMode.externalApplication);
-                    }),
-                // Maintainer opens GitHub account
-                _InfoPill(
-                    icon: Icons.shield_outlined,
-                    text: 'Maintainer',
-                    tooltip: l10n.aboutFollowGitHub,
-                    onTap: () {
-                      launchUrl(Uri.parse('https://github.com/HemantKArya'),
-                          mode: LaunchMode.externalApplication);
-                    }),
                 // Short label 'Email' opens mail composer
                 _InfoPill(
                     icon: FontAwesome.x_twitter_brand,
@@ -252,102 +227,11 @@ class _AboutState extends State<About> {
                         mode: LaunchMode.externalApplication,
                       );
                     }),
-                // Short label 'Linkedin' opens Linkedin profile
-                _InfoPill(
-                    icon: FontAwesome.linkedin_brand,
-                    text: 'Linkedin',
-                    tooltip: l10n.aboutCreativeHighlights,
-                    onTap: () {
-                      launchUrl(
-                          Uri.parse('https://linkedin.com/in/iamhemantindia'),
-                          mode: LaunchMode.externalApplication);
-                    }),
               ],
             )
           ],
         ),
       ),
-    );
-  }
-
-  Widget _buildSupportSection(AppLocalizations l10n) {
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12.0),
-          child: Text(
-            l10n.aboutTipQuote,
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-                color: kSecondaryTextColor, fontSize: 14, fontFamily: 'Gilroy'),
-          ),
-        ),
-        const SizedBox(height: 12),
-        Container(
-          decoration: BoxDecoration(
-            gradient: kButtonGradient,
-            // slightly larger radius for a more prominent pill
-            borderRadius: BorderRadius.circular(34.0),
-            boxShadow: [
-              BoxShadow(
-                color: const Color(0xFFDE6262).withValues(alpha: 0.5),
-                blurRadius: 25,
-                offset: const Offset(0, 8),
-              ),
-            ],
-          ),
-          child: Material(
-            color: Colors.transparent,
-            child: InkWell(
-              // increase the ink response radius to match the larger pill
-              borderRadius: BorderRadius.circular(32.0),
-              onTap: () {
-                launchUrl(
-                  Uri.parse("https://hemantkarya.github.io/BloomeeTunes/"),
-                  mode: LaunchMode.externalApplication,
-                );
-              },
-              child: Container(
-                // increased padding for a larger touch target
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 44, vertical: 16),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(32.0),
-                  border:
-                      Border.all(color: Colors.white.withValues(alpha: 0.15)),
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    const Icon(Icons.favorite,
-                        color: kPrimaryTextColor, size: 20),
-                    const SizedBox(width: 10),
-                    Flexible(
-                        child: Text(
-                      l10n.aboutTipButton,
-                      style: const TextStyle(
-                        color: kPrimaryTextColor,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w700,
-                        fontFamily: 'Gilroy',
-                      ),
-                    )),
-                  ],
-                ),
-              ),
-            ),
-          ),
-        ),
-        const SizedBox(height: 20),
-        Text(
-          l10n.aboutTipDesc,
-          textAlign: TextAlign.center,
-          style: const TextStyle(
-              color: kSecondaryTextColor, fontSize: 14, fontFamily: 'Gilroy'),
-        ),
-      ],
     );
   }
 
@@ -365,7 +249,7 @@ class _AboutState extends State<About> {
               borderRadius: BorderRadius.circular(8),
               onTap: () {
                 launchUrl(
-                    Uri.parse("https://hemantkarya.github.io/BloomeeTunes/"),
+                    Uri.parse("https://github.com/Thalapathy100/CNMW-Music"),
                     mode: LaunchMode.externalApplication);
               },
               child: Row(
@@ -377,8 +261,7 @@ class _AboutState extends State<About> {
                   Text(l10n.aboutGitHub,
                       style: const TextStyle(
                           color: kSecondaryTextColor,
-                          fontSize: 12,
-                          fontFamily: 'Gilroy')),
+                          fontSize: 12)),
                 ],
               ),
             ),
@@ -391,8 +274,7 @@ class _AboutState extends State<About> {
                 return Text(ver,
                     style: const TextStyle(
                         color: kSecondaryTextColor,
-                        fontSize: 12,
-                        fontFamily: 'Gilroy'));
+                        fontSize: 12));
               },
             ),
           ],
@@ -419,8 +301,7 @@ class _InfoPill extends StatelessWidget {
         Text(text,
             style: const TextStyle(
                 color: kSecondaryTextColor,
-                fontSize: 13,
-                fontFamily: 'Gilroy')),
+                fontSize: 13)),
       ],
     );
 
@@ -677,71 +558,3 @@ class Particle {
 }
 
 // A calming, natural-looking rotating flower using a sinusoidal motion.
-class GentleRotatingFlower extends StatefulWidget {
-  final double size;
-  const GentleRotatingFlower({this.size = 28, super.key});
-
-  @override
-  State<GentleRotatingFlower> createState() => _GentleRotatingFlowerState();
-}
-
-class _GentleRotatingFlowerState extends State<GentleRotatingFlower>
-    with SingleTickerProviderStateMixin {
-  late final AnimationController _controller;
-
-  @override
-  void initState() {
-    super.initState();
-    // Slow, calming cycle. Repeats forever.
-    _controller = AnimationController(
-      vsync: this,
-      duration: const Duration(seconds: 8),
-    )..repeat();
-  }
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    if (MediaQuery.disableAnimationsOf(context)) {
-      _controller.stop();
-    } else if (!_controller.isAnimating) {
-      _controller.repeat();
-    }
-  }
-
-  @override
-  void dispose() {
-    _controller.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedBuilder(
-      animation: _controller,
-      builder: (context, child) {
-        final t = _controller.value; // 0..1
-        // Sinusoidal rotation: small angle in radians (~ +/-9 deg)
-        final angle = sin(t * 2 * pi) * (pi / 20);
-        // Slight 'breathing' scale for softness
-        final scale = 1 + 0.03 * sin(t * 2 * pi);
-        // Gentle horizontal sway in logical pixels
-        final dx = 2.0 * sin(t * 2 * pi);
-
-        return Transform.translate(
-          offset: Offset(dx, 0),
-          child: Transform.rotate(
-            angle: angle,
-            child: Transform.scale(
-              scale: scale,
-              child: Text(
-                "🌸",
-                style: TextStyle(fontSize: widget.size),
-              ),
-            ),
-          ),
-        );
-      },
-    );
-  }
-}

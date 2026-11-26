@@ -560,7 +560,7 @@ class _PresencePreview extends StatelessWidget {
                       ],
                       const SizedBox(height: 14),
                       const _PreviewButton(
-                          label: DiscordService.getBloomeeLabel),
+                          label: DiscordService.getCnmwMusicLabel),
                     ],
                   ),
           ),

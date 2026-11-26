@@ -203,7 +203,7 @@ class DiscordStatus {
 
 /// Which field Discord shows in the member list / status line.
 enum DiscordStatusDisplay {
-  /// The app name, e.g. "Listening to Bloomee".
+  /// The app name, e.g. "Listening to CNMW Music".
   appName,
 
   /// The `state` field (artist).

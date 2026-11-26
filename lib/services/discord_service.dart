@@ -25,7 +25,7 @@ class DiscordService {
   DiscordService._();
 
   static const _clientId = '1512528534667661443';
-  static const _repoUrl = 'https://github.com/HemantKArya/BloomeeTunes';
+  static const _repoUrl = 'https://github.com/Thalapathy100/CNMW-Music';
   static const pauseGrace = Duration(minutes: 5);
 
   /// Seek / resume larger than this re-anchors Discord's time bar.
@@ -234,11 +234,11 @@ class DiscordService {
           : null,
       // Discord shows buttons to friends only (never on your own profile).
       // The title already links to the song, so one button is enough.
-      buttons: const [DiscordButton(label: getBloomeeLabel, url: _repoUrl)],
+      buttons: const [DiscordButton(label: getCnmwMusicLabel, url: _repoUrl)],
     );
   }
 
-  static const getBloomeeLabel = 'Get Bloomee 🌸';
+  static const getCnmwMusicLabel = 'Get CNMW Music';
 
   /// Artist names for the second line. Some sources pad the artist list
   /// with the album or release year ("Artist, Album, 2025"); those, blanks

@@ -170,11 +170,11 @@ class PlayerEngine {
     _playerA = playerA ??
         Player(
             configuration: const PlayerConfiguration(
-                title: 'BloomeeTunes', bufferSize: 4 * 1024 * 1024));
+                title: 'CNMW Music', bufferSize: 4 * 1024 * 1024));
     _playerB = playerB ??
         Player(
             configuration: const PlayerConfiguration(
-                title: 'BloomeeTunes', bufferSize: 4 * 1024 * 1024));
+                title: 'CNMW Music', bufferSize: 4 * 1024 * 1024));
 
     _nativeConfiguration = Future.wait([
       _configureNativePlayer(_playerA),
