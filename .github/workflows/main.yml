@@ -54,7 +54,7 @@ jobs:
           cache-workspace-crates: true
 
       - name: Install Dependencies
-        run: flutter pub get --enforce-lockfile
+        run: flutter pub get
 
       - name: Extract version from pubspec.yaml
         id: version
@@ -156,7 +156,7 @@ jobs:
           cache-workspace-crates: true
 
       - name: Install Dependencies
-        run: flutter pub get --enforce-lockfile
+        run: flutter pub get
 
       - name: Extract version from pubspec.yaml
         shell: pwsh
@@ -233,7 +233,7 @@ jobs:
           cache-workspace-crates: true
 
       - name: Install Dependencies
-        run: flutter pub get --enforce-lockfile
+        run: flutter pub get
 
       - name: Extract version from pubspec.yaml
         run: |
